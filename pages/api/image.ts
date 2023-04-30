@@ -18,7 +18,7 @@ export default async function handler(
   }
 
   const response = await openai.createImage({
-    prompt: `An illustration of the topic: ${prompt}`,
+    prompt: `The future of {industry} after integrating {product}`,
     n: 1,
     size: '1024x1024',
   });
